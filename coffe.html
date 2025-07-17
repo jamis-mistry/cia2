@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tailwind.css"></script>
+<body>
+    <div class="container mx-auto flex justify-between items-center"></div>
+  <nav class="bg-gray-500 text-white h-16 flex items-center justify-between px-6">
+    <ul class=" h-10 w-10">
+        <li>
+            <img src="logocoffe.png">
+        </li>
+    </ul>
+    <ul class="flex space-x-8"> 
+      <li href="home.html" class="hover:underline cursor-pointer">Home</li>
+      <li href="coffe.html" class="hover:underline cursor-pointer">Coffe</li>
+      <li href="contact.html" class="hover:underline cursor-pointer">Contact Us</li>
+    </ul>
+  
+  </nav>
+    </div>
+
+    <div class="justify-center border-2 border-black-10 my-4 mx-4">
+        <input type="text" id="title" placeholder="Search by title..." class="text-black px-4 py-1 rounded w-64" />
+    </div>
+
+    <script src="coffe.js"></script>
+  <section id="coffe" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Coffe</h2>
+      <div id="coffe-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    </div>
+  </section>
+</body>
+</html>
