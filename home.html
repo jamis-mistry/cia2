@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="tailwind.css"></script>
+</head>
 <body>
     <div class="container mx-auto flex justify-between items-center"></div>
   <nav class="bg-gray-500 text-white h-16 flex items-center justify-between px-6">
@@ -14,30 +15,26 @@
         </li>
     </ul>
     <ul class="flex space-x-8"> 
-      <li href="home.html" class="hover:underline cursor-pointer">Home</li>
-      <li href="coffe.html" class="hover:underline cursor-pointer">Coffe</li>
-      <li href="contact.html" class="hover:underline cursor-pointer">Contact Us</li>
+      <li class="hover:underline cursor-pointer"><a href="home.html">Home</a></li>
+      <li class="hover:underline cursor-pointer"><a href="coffe.html">Coffe</a></li>
+      <li class="hover:underline cursor-pointer"><a href="contact.html">Contact Us</a></li>
     </ul>
-  
   </nav>
-    </div>
 
     <section id="home" class="relative bg-cover bg-center h-screen">
     <div class="absolute inset-0 bg-black bg-opacity-70" ></div>
     <img class="h-screen w-screen" src="hero.jpg">
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-       Coffee Hub
-      </h1>
+    <div class="pointer-events-none relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">Coffee Hub</h1>
     </div>
   </section>
 
-    <section id="video" class="py-16 bg-gray-50">
+  <section id="video" class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Coffe Hub</h2>
       <div class="flex justify-center">
         <video controls class="w-full max-w-4xl rounded-lg shadow-md">
-          <source src="Set2_Video.mp4" type="video/mp4">
+          <source src="Set2_video.mp4" type="video/mp4"/>
           <track src="coffe.vtt" kind="subtitles" srclang="en" label="English" default>
           Your browser does not support the video tag.
         </video>
@@ -45,17 +42,19 @@
     </div>
   </section>
 
+
    <section id="audio" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Steps to create coffe</h2>
       <div class="flex justify-center">
-        <audio controls class="w-full max-w-md">
-          <source src="Set2_Audio.mp3" type="audio/mpeg">
+        <audio id="coffeeAudio" controls class="w-full max-w-md">
+          <source src="Set2_Audio.mp3" type="audio/mpeg"/>
           Your browser does not support the audio tag.
         </audio>
       </div>
     </div>
   </section>
 
+    
 </body>
 </html>
